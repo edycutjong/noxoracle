@@ -10,6 +10,10 @@ const { version } = require('../package.json');
 const nextConfig = {
   reactStrictMode: true,
   env: { NEXT_PUBLIC_APP_VERSION: version },
+  // Serve the self-contained pitch deck (public/pitch.html) at the clean /pitch URL.
+  async rewrites() {
+    return [{ source: '/pitch', destination: '/pitch.html' }];
+  },
   transpilePackages: ['@noxoracle/confidential-ctf'],
   webpack: (config) => {
     config.externals.push('pino-pretty', 'lokijs', 'encoding');
