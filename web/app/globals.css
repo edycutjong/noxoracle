@@ -55,3 +55,35 @@ body {
   border: 1px solid rgba(245, 158, 11, 0.4);
   color: #fbbf24;
 }
+
+.chip-violet {
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: #c4b5fd;
+}
+
+/* Native <details> FAQ — hide the default marker, spin our own chevron on open. */
+.faq > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq > summary::-webkit-details-marker {
+  display: none;
+}
+.faq-chev {
+  transition: transform 200ms ease;
+}
+.faq[open] .faq-chev {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
