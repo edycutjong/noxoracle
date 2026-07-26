@@ -38,7 +38,7 @@
     "@gnosis.pm/conditional-tokens-market-makers": "1.8.1",
     "@iexec-nox/nox-confidential-contracts": "^0.2.2",
     "@iexec-nox/nox-protocol-contracts": "^0.2.4",
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
     "@types/node": "^22.20.1",
     "hardhat": "^2.28.6",
     "solidity-coverage": "^0.8.17",
