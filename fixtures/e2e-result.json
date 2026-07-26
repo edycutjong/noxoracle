@@ -1,0 +1,44 @@
+{
+  "network": "sepolia",
+  "pool": "0xfFba9520699EC4161f41F9bD220e6ce7083d4a2E",
+  "market": {
+    "question": "Will ETH close above $5,000 on Aug 15, 2026?",
+    "questionId": "0x07cae87e207ca7c62d578ea4cf76a3fcc26b3c1351629abd84bb0eb26fb67074",
+    "conditionId": "0x93719bf941665fdca8d286e19bc2e36daca6abb7b507edc2678ac4ebd5b8b687",
+    "oracle": "0xd59278A8dCe73224591B259Fe31f28f3cb64629E",
+    "outcomeSlotCount": 2
+  },
+  "epochId": 1,
+  "kAnonymity": {
+    "count": 4,
+    "kMin": 3,
+    "private": true
+  },
+  "aggregates": {
+    "sumYes": "1700000000",
+    "sumNo": "500000000"
+  },
+  "danaClaim": {
+    "before": "12000000000",
+    "after": "13626127700",
+    "pot": "1626127700",
+    "rateDen": "500000000"
+  },
+  "txHashes": {
+    "openEpoch": "0xd01c80d433c0e48473d90bc222aabaa110fbd9f256bd20a11062b853b31a2be3",
+    "commits": {
+      "Alice": "0xf5caef105f1d83812f7ab2ebd69dceebf257c71094342fdbece4f5d2e3adf1fc",
+      "Bob": "0x59e655f698aa59dccd5f15e089d739297318ef8b8ce3535e9e9a58ca567ff6a0",
+      "Carol": "0x48d2903ef633312b6bc84c321e48790945c67b0bc02fd4aa1e83c0faa8c88ff2",
+      "Dana": "0x456bd111f658f810d74fbd15bce383c0fd21d4da16207c22812936adf459170a"
+    },
+    "closeEpoch": "0x65cf98b8ab31525189cf98e250370d74adcaaa2e7de7f8c37f09f0acfaaf8193",
+    "executeEpoch": "0xdc0f08e6a9d26fcd1f925767378a24495419c5a90e57e1fab372dabb7956af4b",
+    "finalizeEpoch": "0x729864eb87b1ecf5a366ffa2ac946419c3e0038535962a0bc18e35c1654d19a5",
+    "reportPayouts": "0x26bca663b2822c9d92231b7217185e09037096992d10c4ffed06385e36368ffa",
+    "settle": "0x898085a4a3913f401411509b42abf28c82a9444fb6c7d64b3db14cc1f0a2138a",
+    "claim": "0xe353dc3e3bf7dd93eb16a39d20bd10c75fefc81026227302bb175b5be2c829b7"
+  },
+  "deployerBalanceEth": "0.131333596882599299",
+  "completedAt": "2026-07-12T02:18:23.611Z"
+}

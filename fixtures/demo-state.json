@@ -1,0 +1,52 @@
+{
+  "epochId": 1,
+  "aggregates": {
+    "sumYes": "1700000000",
+    "sumNo": "500000000"
+  },
+  "aggregateHandles": {
+    "sumYes": "0x0000aa36a723017ac73ba8722322b53895e5b5626b7081c9bd1c0b256a9e0183",
+    "sumNo": "0x0000aa36a723010c0a512754a15eec26f5a951a555d405b3d29bb33e6a398603"
+  },
+  "unwrapId": "0x0000aa36a723016be3a0ea448e4dbe30a760bd3879fae9defd9b36d01fdafc76",
+  "userStakes": [
+    {
+      "address": "0xbCcaec96dE81b489327E45cA7e467a18dc4E7B1a",
+      "yes": "1000000000",
+      "no": "0"
+    },
+    {
+      "address": "0x7E92b6D35786b31065310A2BFbD6D636D43A48Bf",
+      "yes": "500000000",
+      "no": "0"
+    },
+    {
+      "address": "0xd1a560044D530602A2068806D3ce5908c30d043E",
+      "yes": "200000000",
+      "no": "0"
+    },
+    {
+      "address": "0x4cd3cc85DEDC2e310e5A0Eca52f60dA431d846FF",
+      "yes": "0",
+      "no": "500000000"
+    }
+  ],
+  "stakeHandles": [
+    "0x0000aa36a723017a68a4996afebcfbd3c733ee4c2f370071b7ff289105fa8fab",
+    "0x0000aa36a72301f7b22c0c359a5b95159153f0209df523bb5617754c73d69a58",
+    "0x0000aa36a72301d5c344cad0ea552d609220b4ea769d66915dc184d01c56dfb6",
+    "0x0000aa36a72301efde102fe8e7fb4182ada58992f8026e4ff75eb6afd4ec00d2",
+    "0x0000aa36a72301043ecd799dea09468a1c420aeade3b756963f56f1c13c3001e",
+    "0x0000aa36a72301748483d34a3c84b4056a718d5fde0d3cd7a6f089abe63eec2d",
+    "0x0000aa36a72301feab5fa4a0ce49a3c6085bcae6925d30286a62f62ef1847442",
+    "0x0000aa36a72301bb50130a50282a0c4afddea1a69a94ac0ce72b94340bae04cd"
+  ],
+  "rate": {
+    "num": "1626127700",
+    "den": "500000000"
+  },
+  "payouts": [
+    "1626127700"
+  ],
+  "winner": "no"
+}

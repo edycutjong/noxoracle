@@ -1,0 +1,7 @@
+{
+  "question": "Will ETH close above $5,000 on Aug 15, 2026?",
+  "questionId": "0x07cae87e207ca7c62d578ea4cf76a3fcc26b3c1351629abd84bb0eb26fb67074",
+  "conditionId": "0x93719bf941665fdca8d286e19bc2e36daca6abb7b507edc2678ac4ebd5b8b687",
+  "oracle": "0xd59278A8dCe73224591B259Fe31f28f3cb64629E",
+  "outcomeSlotCount": 2
+}

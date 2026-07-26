@@ -1,0 +1,47 @@
+{
+  "chainId": 11155111,
+  "network": "sepolia",
+  "status": "LIVE on Ethereum Sepolia — deployed + full confidential cycle run end-to-end (epoch #1, k=4, YES 1700/NO 500, NO wins, Dana sealed-claimed pot 1626.1277 cUSD). verify-epoch 1 recomputes I1–I5 GREEN from chain; check-artifacts confirms CTF/FPMM bytecode ≡ official npm artifacts. See fixtures/e2e-result.json for all proof tx hashes.",
+  "contracts": {
+    "DemoUSD": {
+      "address": "0x486c4B8009ACf0BfE26268512F27200e48BD735C",
+      "reused": true
+    },
+    "ConfidentialUSD": {
+      "address": "0x82C281D7403e44d61968c2F49751a56877468991",
+      "reused": true
+    },
+    "ConditionalTokens": {
+      "address": "0xCd316D0655989fBcedb818b59B7374f62eA734a5",
+      "version": "1.0.3",
+      "hashMatch": true
+    },
+    "FixedProductMarketMakerFactory": {
+      "address": "0x5c496C1CD31bdfcaD8278E2Af8dE93a6f3Fa7359",
+      "version": "1.8.1"
+    },
+    "FixedProductMarketMaker": {
+      "address": "0xBf4900df1Da779836DFC03a746307fAFBEEf4cc3",
+      "version": "1.8.1",
+      "implementationHashMatch": true
+    },
+    "NoxOraclePool": {
+      "address": "0xfFba9520699EC4161f41F9bD220e6ce7083d4a2E",
+      "note": "redeployed with the executeEpoch allowTransient fix"
+    }
+  },
+  "market": {
+    "question": "Will ETH close above $5,000 on Aug 15, 2026?",
+    "questionId": "0x07cae87e207ca7c62d578ea4cf76a3fcc26b3c1351629abd84bb0eb26fb67074",
+    "conditionId": "0x93719bf941665fdca8d286e19bc2e36daca6abb7b507edc2678ac4ebd5b8b687",
+    "oracle": "0xd59278A8dCe73224591B259Fe31f28f3cb64629E",
+    "outcomeSlotCount": 2
+  },
+  "noxProtocol": "0x24ef36ec5b626d7dcd09a98f3083c2758f0f77bf",
+  "deployer": "0xd59278A8dCe73224591B259Fe31f28f3cb64629E",
+  "gatewaySelfServe": true,
+  "etherscanVerified": true,
+  "deployedAt": "2026-07-12T01:54:03.116Z",
+  "redeployedAt": "2026-07-12T02:08:52.683Z",
+  "etherscanVerifiedAt": "2026-07-13"
+}

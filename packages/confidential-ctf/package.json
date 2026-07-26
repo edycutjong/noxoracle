@@ -1,0 +1,23 @@
+{
+  "name": "@noxoracle/confidential-ctf",
+  "version": "1.0.0",
+  "description": "Drop-in confidential participation layer for ANY Gnosis Conditional-Tokens market (iExec Nox). Dual-handle commit, epoch batcher, aggregate-only reveal, verify-epoch \u2014 in ~20 lines.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
