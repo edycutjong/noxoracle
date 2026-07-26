@@ -22,7 +22,7 @@ test.describe('private bet slip (market page)', () => {
 
     // Commit privately -> the sealed-handles panel confirms the commit.
     await page.getByRole('button', { name: /Commit privately/i }).click();
-    await expect(page.getByText(/committed/i)).toBeVisible();
+    await expect(page.getByText(/two sealed handles.*committed/i)).toBeVisible();
 
     // Both YES and NO sealed pills exist regardless of chosen side.
     await expect(page.getByText('YES')).not.toHaveCount(0);
