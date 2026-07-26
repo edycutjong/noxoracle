@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { dualHandle, fpmmPrices, formatWhole } from '@noxoracle/confidential-ctf';
 import { MARKET, NETWORK, CONTRACTS, short } from '@/lib/config';
@@ -55,6 +55,24 @@ export default function MarketPage() {
   const [amount, setAmount] = useState('500');
   const [committed, setCommitted] = useState(false);
   const prices = useMemo(() => fpmmPrices(RESERVES), []);
+
+  // Scroll-reveal: animate landing sections into view once, then stop observing.
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) return;
+    const els = Array.from(document.querySelectorAll('.reveal'));
+    const io = new IntersectionObserver(
+      (ents) =>
+        ents.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        }),
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
   const amt = BigInt(Math.max(0, Math.floor(Number(amount) || 0)));
   const pair = amt > 0n ? dualHandle(side, amt) : { amtYes: 0n, amtNo: 0n };
 
@@ -150,13 +168,17 @@ export default function MarketPage() {
 
       {/* ── The one flow ─────────────────────────────────────────────── */}
       <section className="space-y-4 pt-6">
-        <div className="flex flex-wrap items-baseline gap-3">
+        <div className="reveal flex flex-wrap items-baseline gap-3">
           <h2 className="text-2xl font-bold">The one flow</h2>
           <span className="text-sm text-mid">commit-private → public-aggregate → claim-private</span>
         </div>
         <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {FLOW_STEPS.map((step) => (
-            <li key={step.n} className="card flex flex-col gap-2 p-4">
+          {FLOW_STEPS.map((step, i) => (
+            <li
+              key={step.n}
+              className="card reveal lift flex flex-col gap-2 p-4"
+              style={{ ['--d' as any]: `${i * 80}ms` }}
+            >
               <div className="flex items-center gap-2">
                 <span className="chip-amber tnum flex h-6 w-6 items-center justify-center rounded-full text-xs font-semibold">
                   {step.n}
@@ -181,10 +203,14 @@ export default function MarketPage() {
 
       {/* ── Live proof / social proof ────────────────────────────────── */}
       <section className="space-y-4 pt-2">
-        <h2 className="text-2xl font-bold">Not a demo — verifiable on-chain</h2>
+        <h2 className="reveal text-2xl font-bold">Not a demo — verifiable on-chain</h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {PROOF_TILES.map((tile) => (
-            <div key={tile.unit} className="card p-4">
+          {PROOF_TILES.map((tile, i) => (
+            <div
+              key={tile.unit}
+              className="card reveal lift p-4"
+              style={{ ['--d' as any]: `${i * 80}ms` }}
+            >
               <div className="flex items-baseline gap-1.5">
                 <span className="tnum text-2xl font-bold text-primary-bright">{tile.stat}</span>
                 <span className="text-sm text-mid">{tile.unit}</span>
@@ -196,7 +222,7 @@ export default function MarketPage() {
         <div className="flex flex-wrap gap-2">
           <Link
             href="/verify"
-            className="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-black shadow-glow transition hover:brightness-110"
+            className="btn-press lift rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-black shadow-glow transition hover:brightness-110"
           >
             Open Verify →
           </Link>
@@ -204,13 +230,13 @@ export default function MarketPage() {
             href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-xl border border-white/15 px-4 py-2 text-sm font-semibold text-hi transition hover:bg-white/5"
+            className="btn-press lift rounded-xl border border-white/15 px-4 py-2 text-sm font-semibold text-hi transition hover:bg-white/5"
           >
             View on GitHub
           </a>
           <a
             href="/pitch"
-            className="rounded-xl border border-white/15 px-4 py-2 text-sm font-semibold text-hi transition hover:bg-white/5"
+            className="btn-press lift rounded-xl border border-white/15 px-4 py-2 text-sm font-semibold text-hi transition hover:bg-white/5"
           >
             Pitch deck
           </a>
@@ -218,7 +244,7 @@ export default function MarketPage() {
             href={`${NETWORK.explorer}/address/${CONTRACTS.pool}#code`}
             target="_blank"
             rel="noreferrer"
-            className="rounded-xl border border-accent/40 bg-accent/10 px-4 py-2 font-mono text-xs text-accent-bright transition hover:bg-accent/20"
+            className="btn-press lift rounded-xl border border-accent/40 bg-accent/10 px-4 py-2 font-mono text-xs text-accent-bright transition hover:bg-accent/20"
           >
             Verified contract {short(CONTRACTS.pool)} ↗
           </a>
@@ -227,10 +253,10 @@ export default function MarketPage() {
 
       {/* ── How it works / FAQ ───────────────────────────────────────── */}
       <section className="space-y-4 pt-2">
-        <h2 className="text-2xl font-bold">How it works</h2>
+        <h2 className="reveal text-2xl font-bold">How it works</h2>
         <div className="space-y-2">
           {FAQ.map((item) => (
-            <details key={item.q} className="faq card px-4 py-3">
+            <details key={item.q} className="faq card reveal px-4 py-3">
               <summary className="flex items-center justify-between gap-3 text-sm font-semibold text-hi">
                 {item.q}
                 <svg

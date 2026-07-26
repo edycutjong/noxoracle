@@ -77,6 +77,21 @@ body {
   transform: rotate(180deg);
 }
 
+/* ── Micro-animation kit ──────────────────────────────────────────── */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+.reveal { opacity: 0; }
+.reveal.in { animation: revealUp 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0ms); }
+
+.lift { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.lift:hover { transform: translateY(-4px); }
+
+/* Press feedback for CTA buttons */
+.btn-press { transition: transform 0.15s ease, filter 0.15s ease, background-color 0.15s ease; }
+.btn-press:active { transform: translateY(1px) scale(0.985); }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -86,4 +101,8 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+  .reveal,
+  .reveal.in { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .lift:hover { transform: none !important; }
+  .btn-press:active { transform: none !important; }
 }
