@@ -42,11 +42,11 @@
   --font-mono:"JetBrains Mono","SF Mono",ui-monospace,Menlo,Consolas,"Liberation Mono",monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%;background:#000;color:var(--color-text);font-family:var(--font-display);overflow:hidden}
+html,body{height:100%;background:var(--color-bg);color:var(--color-text);font-family:var(--font-display);overflow:hidden}
 html,body,.slide{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── Stage: fixed 1920×1080, scaled to viewport ────────────────────── */
-#stage-wrap{position:fixed;inset:0;display:grid;place-items:center;background:#000}
+#stage-wrap{position:fixed;inset:0;display:grid;place-items:center;background:var(--color-bg)}
 #stage{position:relative;width:1920px;height:1080px;transform-origin:center center;overflow:hidden;
   background:radial-gradient(1200px 800px at 78% 8%,rgba(139,92,246,.16),transparent 60%),
              radial-gradient(1000px 700px at 10% 100%,rgba(34,211,238,.08),transparent 55%),
