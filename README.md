@@ -50,7 +50,7 @@ direction and size stay hidden **through and after settlement**.
 **One flow, with depth:** `commit-private → batch-execute-public-aggregate → claim-private` on one
 real market — with an in-product k-anonymity meter and an independently-recomputable `verify-epoch`.
 
-## Status (this build)
+## 🟢 Status (this build)
 
 - ✅ **197 tests green, locally** — 134 pure-logic (`@noxoracle/confidential-ctf`, vitest) + 63 Solidity
   (Hardhat), incl. the **entire** confidential cycle (commit → close → execute → finalize → settle →
@@ -87,7 +87,7 @@ real market — with an in-product k-anonymity meter and an independently-recomp
 > deliberately-permissive local mock had hidden it. Fixed, redeployed, re-ran green — the cycle above
 > is the fix. See [`feedback.md`](docs/feedback.md) #16.
 
-## The one devastating demo
+## 🎯 The one devastating demo
 
 > "Four people just bet on this market. Tell me who bet NO."
 
@@ -96,7 +96,7 @@ aggregates decrypt to **YES 1,700 / NO 500**. Someone dissented with size — *t
 information, but not the informant.* Dana opens her position card, signs, and her **NO 500** unseals —
 for her alone. NO wins; she claims quietly in cUSD. The herd never learns who read it right.
 
-## Judge path (run it yourself)
+## ⚖️ Judge path (run it yourself)
 
 ```bash
 npm install
@@ -115,7 +115,7 @@ CONFIRM_SPEND=yes npm run seed    # 4-bettor cycle -> writes fixtures/demo-state
 npm run verify-epoch 1            # recompute I1–I5 from chain data alone (read-only)
 ```
 
-## Configuration — environment variables & services
+## ⚙️ Configuration — environment variables & services
 
 Copy the template and fill it in (`.env` is gitignored — never commit real keys; use throwaway keys, Sepolia only):
 
@@ -141,7 +141,7 @@ cp .env.example .env
 
 Deployed contract addresses (NoxOraclePool, CTF, FPMM + factory, cUSD, DemoUSD) are in the **Status** table above.
 
-## Engineering harness
+## 🛠️ Engineering harness
 
 Beyond the on-chain proof, the repo ships a production-grade test + security harness so judges can
 tell a real product from a weekend prototype.
@@ -176,7 +176,7 @@ The E2E suite runs the app with **no wallet and no environment variables** — e
 (`/`, `/position`, `/epoch`, `/verify`) renders confidential-market UI from bundled demo fixtures, so
 the confidential-bet flow, meta tags, and mobile layout are all verified without signing a transaction.
 
-## Why only Nox
+## 🔐 Why only Nox
 
 | Primitive | Where | Without it |
 |---|---|---|
@@ -190,14 +190,14 @@ the confidential-bet flow, meta tags, and mobile layout are all verified without
 Remove Nox and you need an FHE coprocessor, a threshold-decryption committee, a custodial batcher, and
 a disclosure registry — four systems — and still couldn't compose with the CTF market on the same chain.
 
-## Honest limitations
+## ⚠️ Honest limitations
 
 k-anonymity is bounded by epoch size (meter + k<3 warning + a seeded bad epoch #0; membership is
 public, only sizes/direction hidden) · batching trades latency for FPMM price drift (slippage guards) ·
 the demo oracle is a disclosed centralized EOA (reality.eth = the stated production path) · the SDK is
 beta `0.1.0-beta.13` (findings in [`feedback.md`](docs/feedback.md)).
 
-## Repo map
+## 🗺️ Repo map
 
 | Path | What |
 |---|---|
@@ -210,7 +210,7 @@ beta `0.1.0-beta.13` (findings in [`feedback.md`](docs/feedback.md)).
 | `web/` | Next.js dApp (market · position · epoch · verify), synthwave-themed |
 | [`SPEC.md`](docs/SPEC.md) · [`ARCHITECTURE.md`](docs/ARCHITECTURE.md) · [`DEMO.md`](docs/DEMO.md) · [`feedback.md`](docs/feedback.md) | invariants · design · runbook · findings |
 
-## Disclosure
+## 📢 Disclosure
 
 Hackathon-original. The cUSD wrapper + Nox integration core are a **disclosed shared skeleton** with my
 other WTF entries (NoxSend/NoxSafe), vendored into this repo (no cross-repo `file:` dependency). The
