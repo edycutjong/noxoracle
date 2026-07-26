@@ -30,6 +30,7 @@
   <p><em>✅ Live on Ethereum Sepolia — the full confidential cycle (commit-private → public-aggregate → claim-private) proven on-chain over a byte-for-byte unmodified Gnosis CTF market. 197 tests green.</em></p>
 
 </div>
+
 ---
 
 > **4 identical transactions. One dissenter. Unfindable.**
