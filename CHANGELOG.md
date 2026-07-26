@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/edycutjong/noxoracle/compare/v1.0.0...v1.1.0) (2026-07-26)
+
+
+### Features
+
+* **web:** micro-animations — scroll-reveal, hover-lift, press feedback (reduced-motion safe) ([f2f89d1](https://github.com/edycutjong/noxoracle/commit/f2f89d1b64947d4d7efef8ab86fd9db8944c7749))
+* **web:** richer landing page — one-flow, live-proof stats, CTAs, honest FAQ for first-time visitors ([f55cfa7](https://github.com/edycutjong/noxoracle/commit/f55cfa7185972b16113542628cc5073f448b5d45))
+* **web:** universal pressable feedback — press + keyboard focus-visible on all interactive elements (a11y) ([2136228](https://github.com/edycutjong/noxoracle/commit/213622893ac1ff91a9e4079236a54f3b9535ca06))
+
 # 1.0.0 (2026-07-26)
 
 
