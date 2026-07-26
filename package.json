@@ -1,6 +1,6 @@
 {
   "name": "noxoracle-monorepo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "NoxOracle — private positions on a real Gnosis CTF prediction market (iExec Nox / WTF!! Hackathon)",
   "license": "MIT",

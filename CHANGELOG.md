@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/edycutjong/noxoracle/compare/v1.1.0...v1.1.1) (2026-07-26)
+
+
+### Bug Fixes
+
+* **pitch:** letterbox + page background match slide bg — deck fills the whole screen at any aspect ratio ([9962977](https://github.com/edycutjong/noxoracle/commit/99629773b596e6b6902c7b3c7c306855af88391a))
+* **security:** npm audit fix ([b196f2e](https://github.com/edycutjong/noxoracle/commit/b196f2e9277228accf0afd59a24358d79a6b2bd6))
+
 # [1.1.0](https://github.com/edycutjong/noxoracle/compare/v1.0.0...v1.1.0) (2026-07-26)
 
 
