@@ -22,7 +22,6 @@
   [![ERC-7984](https://img.shields.io/badge/ERC--7984-Confidential_Token-7c3aed?style=flat)](https://eips.ethereum.org/EIPS/eip-7984)
   [![Tests](https://img.shields.io/badge/tests-197_passing-3fb950?style=flat)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
   [![Coverage](https://img.shields.io/badge/contracts_coverage-100%25-3fb950?style=flat)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
-  [![Release](https://img.shields.io/badge/release-v1.1.1-0ea5e9?style=flat)](https://github.com/edycutjong/noxoracle/releases)
   [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
   [![CI](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
 
