@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/edycutjong/noxoracle/compare/v1.2.0...v1.2.1) (2026-07-28)
+
+
+### Bug Fixes
+
+* **security:** resolve CodeQL high-severity alerts (ReDoS + DOM XSS) ([4faae51](https://github.com/edycutjong/noxoracle/commit/4faae515078e20593c25763367e16a67f3661db3)), closes [hi#severity](https://github.com/hi/issues/severity)
+
 # [1.2.0](https://github.com/edycutjong/noxoracle/compare/v1.1.1...v1.2.0) (2026-07-28)
 
 
