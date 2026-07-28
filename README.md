@@ -6,21 +6,22 @@
 
   <br/>
 
-  [![Demo Video](https://img.shields.io/badge/▶_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/eVRYuVqWf_k)
-  [![Live Demo](https://img.shields.io/badge/🚀_Live-Demo-06b6d4?style=for-the-badge)](https://noxoracle.edycu.dev)
-  [![Pitch Deck](https://img.shields.io/badge/📊_Pitch-Deck-f59e0b?style=for-the-badge)](https://noxoracle.edycu.dev/pitch)
-  [![WTF!! Hackathon](https://img.shields.io/badge/WTF!!_Hackathon-iExec_Nox-8b5cf6?style=for-the-badge)](https://dorahacks.io/hackathon/wtf-hackathon)
-  [![Verified Contract](https://img.shields.io/badge/🔍_Verified-Contract-21325b?style=for-the-badge&logo=ethereum&logoColor=white)](https://sepolia.etherscan.io/address/0xfFba9520699EC4161f41F9bD220e6ce7083d4a2E)
+  [![Demo Video](https://img.shields.io/badge/▶_Demo-YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://youtu.be/eVRYuVqWf_k)
+  [![Live Demo](https://img.shields.io/badge/🚀_Live-Demo-06b6d4?style=flat)](https://noxoracle.edycu.dev)
+  [![Pitch Deck](https://img.shields.io/badge/📊_Pitch-Deck-f59e0b?style=flat)](https://noxoracle.edycu.dev/pitch)
+  [![WTF!! Hackathon](https://img.shields.io/badge/WTF!!_Hackathon-iExec_Nox-8b5cf6?style=flat)](https://dorahacks.io/hackathon/wtf-hackathon)
+  [![DoraHacks BUIDL](https://img.shields.io/badge/DoraHacks-BUIDL_47256-5b21b6?style=flat&logo=dora&logoColor=white)](https://dorahacks.io/buidl/47256)
+  [![Verified Contract](https://img.shields.io/badge/🔍_Verified-Contract-21325b?style=flat&logo=ethereum&logoColor=white)](https://sepolia.etherscan.io/address/0xfFba9520699EC4161f41F9bD220e6ce7083d4a2E)
 
   <br/>
 
-  ![Next.js 14](https://img.shields.io/badge/Next.js_14-black?style=flat&logo=next.js)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-  ![Ethereum Sepolia](https://img.shields.io/badge/Ethereum_Sepolia-627EEA?style=flat&logo=ethereum&logoColor=white)
-  ![Gnosis CTF](https://img.shields.io/badge/Gnosis_CTF-1.0.3-3F3D2C?style=flat)
-  ![ERC-7984](https://img.shields.io/badge/ERC--7984-Confidential_Token-7c3aed?style=flat)
-  ![Tests](https://img.shields.io/badge/tests-197_passing-3fb950?style=flat)
-  ![Coverage](https://img.shields.io/badge/contracts_coverage-100%25-3fb950?style=flat)
+  [![Next.js 14](https://img.shields.io/badge/Next.js_14-black?style=flat&logo=next.js)](https://nextjs.org)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+  [![Ethereum Sepolia](https://img.shields.io/badge/Ethereum_Sepolia-627EEA?style=flat&logo=ethereum&logoColor=white)](https://sepolia.etherscan.io)
+  [![Gnosis CTF](https://img.shields.io/badge/Gnosis_CTF-1.0.3-3F3D2C?style=flat)](https://github.com/gnosis/conditional-tokens-contracts)
+  [![ERC-7984](https://img.shields.io/badge/ERC--7984-Confidential_Token-7c3aed?style=flat)](https://eips.ethereum.org/EIPS/eip-7984)
+  [![Tests](https://img.shields.io/badge/tests-197_passing-3fb950?style=flat)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
+  [![Coverage](https://img.shields.io/badge/contracts_coverage-100%25-3fb950?style=flat)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
   [![Release](https://img.shields.io/badge/release-v1.1.1-0ea5e9?style=flat)](https://github.com/edycutjong/noxoracle/releases)
   [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](https://opensource.org/licenses/MIT)
   [![CI](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/noxoracle/actions/workflows/ci.yml)
