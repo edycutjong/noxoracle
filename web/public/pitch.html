@@ -60,11 +60,11 @@ html,body{height:100%;background:var(--color-bg);color:var(--color-text);font-fa
 html,body,.slide{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── Stage: fixed 1920×1080, scaled to viewport ────────────────────── */
-#stage-wrap{position:fixed;inset:0;display:grid;place-items:center;
+#stage-wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
   background:radial-gradient(1200px 800px at 78% 8%,rgba(139,92,246,.16),transparent 60%),
              radial-gradient(1000px 700px at 10% 100%,rgba(34,211,238,.08),transparent 55%),
              linear-gradient(160deg,var(--color-bg),var(--color-bg-2))}
-#stage{position:relative;width:1920px;height:1080px;transform-origin:center center;overflow:hidden;
+#stage{position:relative;width:1920px;height:1080px;flex:none;transform-origin:center center;overflow:hidden;
   background:radial-gradient(1200px 800px at 78% 8%,rgba(139,92,246,.16),transparent 60%),
              radial-gradient(1000px 700px at 10% 100%,rgba(34,211,238,.08),transparent 55%),
              linear-gradient(160deg,var(--color-bg),var(--color-bg-2));}
@@ -97,6 +97,7 @@ h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.02}
 
 /* ── Slide 1 · Cover ───────────────────────────────────────────────── */
 .cover-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:60px;flex:1;align-items:center}
+.cover-grid>div{min-width:0}
 .cover-logo{display:flex;align-items:center;gap:22px;margin-bottom:38px}
 .cover-orb{width:82px;height:82px;flex:none}
 .cover-title{font-size:132px;line-height:.9;letter-spacing:-.035em}
@@ -111,9 +112,9 @@ h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.02}
 .tx-row{display:flex;align-items:center;gap:20px;padding:22px 26px;border-radius:14px;border:1px solid var(--color-line);
   background:linear-gradient(90deg,var(--color-panel),rgba(30,24,48,.5));position:relative;overflow:hidden}
 .tx-row .who{font-family:var(--font-mono);font-size:17px;color:var(--color-muted);width:70px}
-.tx-row .handles{display:flex;gap:10px;flex:1}
+.tx-row .handles{display:flex;gap:10px;flex:1;min-width:0}
 .seal{flex:1;font-family:var(--font-mono);font-size:14px;color:var(--color-faint);background:rgba(0,0,0,.35);
-  border:1px solid var(--color-line);border-radius:9px;padding:9px 12px;letter-spacing:.02em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  border:1px solid var(--color-line);border-radius:9px;padding:9px 12px;letter-spacing:.02em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0}
 .tx-row.dissenter{border-color:var(--color-accent)}
 .tx-row.dissenter::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--color-accent);
   box-shadow:0 0 22px var(--color-accent);animation:pulseBar 3.4s ease-in-out infinite}
