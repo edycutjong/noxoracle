@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/edycutjong/noxoracle/compare/v1.1.1...v1.2.0) (2026-07-28)
+
+
+### Features
+
+* **web:** Cipher-Noir landing redesign + restored bet slip + demo video + screenshots ([5c6bc73](https://github.com/edycutjong/noxoracle/commit/5c6bc733dbb38c91ebf3d54fa9b53b9b70a33bab))
+
 ## [1.1.1](https://github.com/edycutjong/noxoracle/compare/v1.1.0...v1.1.1) (2026-07-26)
 
 
