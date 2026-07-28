@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
  */
 
 const ROUTES = [
-  { path: '/', heading: /Take a position/i },
+  { path: '/', heading: /Bet what you know/i },
   { path: '/position', heading: /Your position/i },
   { path: '/epoch', heading: /Epoch #1/i },
   { path: '/verify', heading: /Verify/i },

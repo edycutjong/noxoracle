@@ -46,7 +46,10 @@ html,body{height:100%;background:var(--color-bg);color:var(--color-text);font-fa
 html,body,.slide{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── Stage: fixed 1920×1080, scaled to viewport ────────────────────── */
-#stage-wrap{position:fixed;inset:0;display:grid;place-items:center;background:var(--color-bg)}
+#stage-wrap{position:fixed;inset:0;display:grid;place-items:center;
+  background:radial-gradient(1200px 800px at 78% 8%,rgba(139,92,246,.16),transparent 60%),
+             radial-gradient(1000px 700px at 10% 100%,rgba(34,211,238,.08),transparent 55%),
+             linear-gradient(160deg,var(--color-bg),var(--color-bg-2))}
 #stage{position:relative;width:1920px;height:1080px;transform-origin:center center;overflow:hidden;
   background:radial-gradient(1200px 800px at 78% 8%,rgba(139,92,246,.16),transparent 60%),
              radial-gradient(1000px 700px at 10% 100%,rgba(34,211,238,.08),transparent 55%),
@@ -754,6 +757,7 @@ body.debug-contrast .lead,body.debug-contrast .mono{outline:1px solid rgba(255,0
       <div class="links">
         <div class="linkrow"><span class="k">Live</span><span class="v"><b>noxoracle.edycu.dev</b></span></div>
         <div class="linkrow"><span class="k">Code</span><span class="v">github.com/edycutjong/<b>noxoracle</b></span></div>
+        <div class="linkrow"><span class="k">Video</span><span class="v">youtu.be/<b>eVRYuVqWf_k</b></span></div>
         <div class="linkrow"><span class="k">Verify</span><span class="v">/verify · <b>verify-epoch 1</b> → GREEN</span></div>
         <div class="linkrow"><span class="k">Contract</span><span class="v mono" style="font-size:15px">0xfFba9520…83d4a2E <span class="check">✓</span></span></div>
       </div>

@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
+import { Space_Grotesk, Manrope } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import { TopBar } from '@/components/TopBar';
+
+const display = Space_Grotesk({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-display', display: 'swap' });
+const body = Manrope({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-body', display: 'swap' });
 
 const TITLE = 'NoxOracle — bet what you know, not who you are';
 const DESCRIPTION =
@@ -31,8 +35,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="font-display">
+    <html lang="en" className={`${display.variable} ${body.variable}`}>
+      <body className="font-body">
         <div className="grid-floor" aria-hidden />
         <Providers>
           <div className="relative z-10 mx-auto max-w-5xl px-5 pb-24">

@@ -10,8 +10,9 @@ test.describe('private bet slip (market page)', () => {
   test('a bet becomes two sealed handles, one an encrypted zero', async ({ page }) => {
     await page.goto('/');
 
-    // The market always advertises the dual-handle invariant.
-    await expect(page.getByText(/one is an encrypted zero/i)).toBeVisible();
+    // The market always advertises the dual-handle invariant (stated in both the hero
+    // preview and the interactive slip; assert the first occurrence).
+    await expect(page.getByText(/one is an encrypted zero/i).first()).toBeVisible();
 
     // Choose a side and enter a size — direction never leaves plaintext on-chain.
     // (The side buttons render lowercase text styled uppercase via CSS.)
