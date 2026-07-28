@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/edycutjong/noxoracle/compare/v1.3.0...v1.3.1) (2026-07-28)
+
+
+### Bug Fixes
+
+* **pitch:** center oversized stage (flex + flex:none) so cover content no longer clips right ([bb4bd2c](https://github.com/edycutjong/noxoracle/commit/bb4bd2cf861d99f64ddf99f02456cba348652074)), closes [#stage-wrap](https://github.com/edycutjong/noxoracle/issues/stage-wrap) [#stage](https://github.com/edycutjong/noxoracle/issues/stage)
+* **pitch:** use scannable PNG QR (data-URI) encoding the full https URL ([ccd4d1c](https://github.com/edycutjong/noxoracle/commit/ccd4d1c65d9dc4b2cab4473fe189c0c2c85d15f1))
+
 # [1.3.0](https://github.com/edycutjong/noxoracle/compare/v1.2.1...v1.3.0) (2026-07-28)
 
 
