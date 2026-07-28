@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/edycutjong/noxoracle/compare/v1.2.1...v1.3.0) (2026-07-28)
+
+
+### Features
+
+* **pitch:** real QR + SVG icons + share metadata ([9bd254f](https://github.com/edycutjong/noxoracle/commit/9bd254f241531b8ff74c90e557987ac7cf5a97b9))
+
 ## [1.2.1](https://github.com/edycutjong/noxoracle/compare/v1.2.0...v1.2.1) (2026-07-28)
 
 
