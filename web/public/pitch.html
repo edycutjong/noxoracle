@@ -859,8 +859,9 @@ body.debug-contrast .lead,body.debug-contrast .mono{outline:1px solid rgba(255,0
   var ov = document.getElementById('overview'), ovGrid = document.getElementById('ovGrid');
   slides.forEach(function(sl, i){
     var d = document.createElement('div'); d.className='ov-thumb';
-    d.innerHTML = '<div class="n">'+pad(i)+'</div><div class="k">'+(sl.dataset.k||'')+'</div>'
-      + '<div class="t">'+(sl.querySelector('h1,h2') ? sl.querySelector('h1,h2').textContent.slice(0,52) : (sl.dataset.k||''))+'</div>';
+    var h = sl.querySelector('h1,h2');
+    [['n', pad(i)], ['k', sl.dataset.k||''], ['t', h ? h.textContent.slice(0,52) : (sl.dataset.k||'')]]
+      .forEach(function(pair){ var e = document.createElement('div'); e.className = pair[0]; e.textContent = pair[1]; d.appendChild(e); });
     d.addEventListener('click', function(){ ov.classList.remove('show'); show(i); });
     ovGrid.appendChild(d);
   });
